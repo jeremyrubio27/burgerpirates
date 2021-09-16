@@ -1,0 +1,93 @@
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .container-contacts {
+      .contact-form{
+        
+          display: flex;
+          flex-direction: column;
+          max-width: 300px;
+          margin: 0 auto;
+          h2 {
+              font-size: 32px;
+              font-family: 'Roboto',sans-serif;
+          }
+
+        input{
+            padding: 16px;
+            border-radius: 8px;
+            margin: 5px;
+            border: 1px solid #777;
+        }
+        button{
+            margin: 5px;
+            width: 120px;
+            padding: 10px;
+            border: none;
+            background-color: #ffbe33;
+            color: white;
+            border-radius: 30px;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 600;
+            margin-right: 20px;
+         }
+      }
+      .google-map{
+          width: 100%;
+         text-align: center;
+          img{
+              width: 280px;
+              object-fit: cover;
+          }
+      }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .contact-us{
+        
+        .container-contacts{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .contact-form{
+               width: 600px;
+            }
+            .google-map{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 380px;
+                    height: 350px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 1028px) {
+    .contact-us{
+        .container-contacts{
+            width: 100%;
+            
+            .google-map{
+                text-align: start;
+                width: 50%;
+                display: block;
+                img{
+                    width: 420px;
+                    
+                }
+            }
+        }
+    }
+}
